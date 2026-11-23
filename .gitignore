@@ -1,0 +1,5 @@
+/target
+/app.sqlite
+/app.sqlite-shm
+/app.sqlite-wal
+.idea
