@@ -3,3 +3,5 @@
 /app.sqlite-shm
 /app.sqlite-wal
 .idea
+.env
+.env.*

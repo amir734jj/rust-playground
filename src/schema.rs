@@ -1,7 +1,11 @@
 diesel::table! {
     users (id) {
         id -> Integer,
-        name -> Text,
+        age -> Integer,
+        firstname -> Text,
+        lastname -> Text,
+        username -> Text,
+        password_hash -> Nullable<Text>,
     }
 }
 
@@ -18,6 +22,7 @@ diesel::table! {
         id -> Integer,
         user_id -> Integer,
         token_hash -> Text,
+        expires_at -> BigInt,
     }
 }
 

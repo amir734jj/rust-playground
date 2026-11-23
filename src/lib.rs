@@ -1,3 +1,5 @@
+pub mod api;
+pub mod auth;
 pub mod migrations;
 pub mod models;
 pub mod schema;

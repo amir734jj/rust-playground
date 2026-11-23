@@ -4,6 +4,17 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-diesel = { version = "2.3", features = ["sqlite"] }
-paste = "1.0"
-libsqlite3-sys = { version = "0.40", features = ["bundled"] }
+argon2 = "0.5"
+diesel = { version = "2.4.0", features = ["sqlite"] }
+diesel_migrations = "2.4.0"
+dotenvy = "0.15"
+jsonwebtoken = "9"
+libsqlite3-sys = { version = "0.40.0", features = ["bundled"] }
+poem = "3"
+poem-openapi = { version = "5", features = ["swagger-ui"] }
+rand = "0.8"
+sea-query = { version = "0.32", default-features = false, features = ["backend-sqlite", "backend-postgres"] }
+serde = { version = "1", features = ["derive"] }
+sha2 = "0.10"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+uuid = { version = "1", features = ["v4"] }
